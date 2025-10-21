@@ -7,7 +7,7 @@
     --secondary-color: #588157; /* Lighter green */
     --bg-light: #F7F7F7;
     --bg-white: #FFFFFF;
-    --text-dark: #343A40;
+    --text-white: #FFFFFF;
     --text-light: #495057;
     --border-color: #E0E0E0;
 }
@@ -195,4 +195,5 @@ footer {
     margin-top: 40px;
     color: #888;
     font-size: 0.9rem;
+
 }
