@@ -1,0 +1,198 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap');
+
+/* --- CSS Variables (Color Palette) --- */
+:root {
+    --primary-color: #3A5A40; /* Deep green */
+    --secondary-color: #588157; /* Lighter green */
+    --bg-light: #F7F7F7;
+    --bg-white: #FFFFFF;
+    --text-dark: #343A40;
+    --text-light: #495057;
+    --border-color: #E0E0E0;
+}
+
+/* --- Basic Setup --- */
+body {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1.25em;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    color: var(--text-light);
+    text-align: center;
+    padding: 16px 22px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav a.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* --- Main Content Area --- */
+main {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+/* --- Special Blocks --- */
+.quote {
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    background-color: #F7FAF6; /* Very light green */
+    border-left: 6px solid var(--secondary-color);
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* --- Homepage Connection Cards --- */
+.connection-card {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-top: 25px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.connection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Buttons --- */
+.button-container {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 50px; /* Pill shape */
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: white;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9rem;
+}
